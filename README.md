@@ -1,11 +1,16 @@
 # Vroma Cut
 
-Vromaで記録したGPXとマーク情報をもとに、動画からお気に入りの場面を手軽に切り出せるmacOSアプリです。
+[Vroma](https://www.tsuyukimakoto.com/products/vroma/)で記録したGPXとマーク情報をもとに、動画からお気に入りの場面を手軽に切り出せるmacOSアプリです。
 撮影中に付けたマークを手掛かりに候補を表示し、動画を見ながら残したい範囲を調整できます。
+
+Vromaについては[説明ページ](https://www.tsuyukimakoto.com/products/vroma/)をご覧ください。
+[App StoreからVromaを入手できます](https://apps.apple.com/app/id6759390249)。
 
 **マーク情報がなくても、動画だけを読み込み、指定した箇所を再エンコードせずに切り出せます。**
 映像と音声の圧縮済みデータをコピーするため、再圧縮による画質や音質の劣化はありません。
 再生可能な境界に合わせるため、実際に保存する範囲は指定範囲より広がる場合があります。
+
+![Vroma Cutで撮影動画とマークを確認し、タイムライン上の切り出し範囲を調整する画面](docs/images/vroma-cut-screenshot.png)
 
 ## 主な機能
 
