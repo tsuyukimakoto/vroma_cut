@@ -11,7 +11,8 @@ extension Recording {
     public var sourceSegments: [RecordingSegment] {
         segments ?? [RecordingSegment(name: name, file: file, duration: duration)]
     }
-    public func playbackAsset() async throws -> AVAsset {
+    // Each call creates a fresh asset and transfers it to the caller.
+    public func playbackAsset() async throws -> sending AVAsset {
         if segments == nil { return AVURLAsset(url: try file.resolve()) }
         let composition = AVMutableComposition()
         guard let video = composition.addMutableTrack(withMediaType: .video, preferredTrackID: kCMPersistentTrackID_Invalid),

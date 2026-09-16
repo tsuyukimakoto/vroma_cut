@@ -384,8 +384,7 @@ struct EditorView: View {
         let old = self.project, binding = $project
         self.project = project
         if undoProxy == nil { undoProxy = UndoProxy(binding: binding, manager: undoManager) }
-        if let undoProxy { undoManager?.registerUndo(withTarget: undoProxy) { proxy in proxy.restore(old, name: name) } }
-        undoManager?.setActionName(name)
+        undoProxy?.register(old, name: name)
     }
     private func change(_ name: String, operation: (inout Project) throws -> Void) {
         do { var p = project; try operation(&p); try p.validate(); replace(p, name: name) }
@@ -482,12 +481,18 @@ private extension String { func nonempty(or fallback: String) -> String { isEmpt
     let binding: Binding<Project>
     weak var manager: UndoManager?
     init(binding: Binding<Project>, manager: UndoManager?) { self.binding = binding; self.manager = manager }
+    func register(_ project: Project, name: String) {
+        manager?.registerUndo(withTarget: self) { proxy in
+            // This window's UndoManager is registered and invoked on the main actor.
+            MainActor.assumeIsolated { proxy.restore(project, name: name) }
+        }
+        manager?.setActionName(name)
+    }
     func restore(_ project: Project, name: String) {
         let old = binding.wrappedValue
         var restored = project
         restored.exports = old.exports
         binding.wrappedValue = restored
-        manager?.registerUndo(withTarget: self) { $0.restore(old, name: name) }
-        manager?.setActionName(name)
+        register(old, name: name)
     }
 }

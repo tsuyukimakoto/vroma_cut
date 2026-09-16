@@ -30,7 +30,7 @@ import Testing
     let edited = box.value
     let target = UndoProxy(binding: Binding(get: { box.value }, set: { box.value = $0 }), manager: manager)
     manager.beginUndoGrouping()
-    manager.registerUndo(withTarget: target) { $0.restore(original, name: "時刻合わせ") }
+    target.register(original, name: "時刻合わせ")
     manager.endUndoGrouping()
     manager.undo()
     #expect(box.value == original)
