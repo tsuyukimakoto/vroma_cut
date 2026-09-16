@@ -1,0 +1,3 @@
+stream=0 packets=4220 payload_sha256=40f833ceb58883fde1d8aa8c6ce7660b8c96d8413ecdbd6afb2db85a8e12d0fc MATCH
+stream=1 packets=3300 payload_sha256=7071ae51a755456b48aff9bb48d9abac9ba19a1e5e12e7cd62c81c70cf2d7cc3 MATCH
+stream=2 regenerated_timecode=10:43:47:04 counter=2317624 VERIFIED

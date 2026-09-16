@@ -1,0 +1,78 @@
+{
+  "creationDateUTC" : "2026-09-11T02:07:34.437Z",
+  "durationSeconds" : 70.403999999999996,
+  "file" : "movie-mdta.mp4",
+  "metadata" : [
+    {
+      "format" : "com.apple.quicktime.mdta",
+      "identifier" : "mdta\/major_brand",
+      "key" : "Optional(major_brand)",
+      "string" : "avc1"
+    },
+    {
+      "format" : "com.apple.quicktime.mdta",
+      "identifier" : "mdta\/minor_version",
+      "key" : "Optional(minor_version)",
+      "string" : "538182144"
+    },
+    {
+      "format" : "com.apple.quicktime.mdta",
+      "identifier" : "mdta\/compatible_brands",
+      "key" : "Optional(compatible_brands)",
+      "string" : "avc1isom"
+    },
+    {
+      "format" : "com.apple.quicktime.mdta",
+      "identifier" : "mdta\/creation_time",
+      "key" : "Optional(creation_time)",
+      "string" : "2026-09-11T02:07:34.437333Z"
+    },
+    {
+      "format" : "com.apple.quicktime.mdta",
+      "identifier" : "mdta\/com.apple.quicktime.creationdate",
+      "key" : "Optional(com.apple.quicktime.creationdate)",
+      "string" : "2026-09-11T02:07:34.437333Z"
+    },
+    {
+      "format" : "com.apple.quicktime.mdta",
+      "identifier" : "mdta\/encoder",
+      "key" : "Optional(encoder)",
+      "string" : "Lavf62.3.100"
+    }
+  ],
+  "tracks" : [
+    {
+      "codec" : [
+        "hvc1"
+      ],
+      "duration" : 70.403999999999996,
+      "id" : 1,
+      "naturalSize" : "(2688.0, 1520.0)",
+      "nominalFrameRate" : 59.940059661865234,
+      "start" : 0,
+      "type" : "vide"
+    },
+    {
+      "codec" : [
+        "aac "
+      ],
+      "duration" : 70.418000000000006,
+      "id" : 2,
+      "naturalSize" : "(0.0, 0.0)",
+      "nominalFrameRate" : 46.875,
+      "start" : 0,
+      "type" : "soun"
+    },
+    {
+      "codec" : [
+        "tmcd"
+      ],
+      "duration" : 70.403999999999996,
+      "id" : 3,
+      "naturalSize" : "(0.0, 0.0)",
+      "nominalFrameRate" : 0.014203805476427078,
+      "start" : 0,
+      "type" : "tmcd"
+    }
+  ]
+}

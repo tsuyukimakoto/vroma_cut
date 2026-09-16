@@ -1,0 +1,52 @@
+{
+  "creationDateUTC" : "2026-09-11T01:54:43.000Z",
+  "durationSeconds" : 1224.7735499999999,
+  "file" : "VID_20260911_105443_032.mp4",
+  "metadata" : [
+    {
+      "format" : "org.mp4ra",
+      "identifier" : "uiso\/AMBA",
+      "key" : "Optional(1095582273)"
+    },
+    {
+      "format" : "org.mp4ra",
+      "identifier" : "uiso\/nail",
+      "key" : "Optional(1851877740)"
+    }
+  ],
+  "tracks" : [
+    {
+      "codec" : [
+        "hvc1"
+      ],
+      "duration" : 1224.7735499999999,
+      "id" : 1,
+      "naturalSize" : "(2688.0, 1520.0)",
+      "nominalFrameRate" : 59.940059661865234,
+      "start" : 0,
+      "type" : "vide"
+    },
+    {
+      "codec" : [
+        "aac "
+      ],
+      "duration" : 1224.7239999999999,
+      "id" : 2,
+      "naturalSize" : "(0.0, 0.0)",
+      "nominalFrameRate" : 46.875,
+      "start" : 0,
+      "type" : "soun"
+    },
+    {
+      "codec" : [
+        "tmcd"
+      ],
+      "duration" : 1224.7735499999999,
+      "id" : 3,
+      "naturalSize" : "(0.0, 0.0)",
+      "nominalFrameRate" : 0.0008164774626493454,
+      "start" : 0,
+      "type" : "tmcd"
+    }
+  ]
+}

@@ -60,3 +60,20 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+# Vroma Cut local artifacts
+artifacts/
+.DS_Store
+.swiftpm/
+
+# Local apps, libraries, credentials and camera fixtures
+*.app/
+*.dmg
+*.pkg
+*.a
+*.dylib
+*.p12
+*.p8
+.env
+.env.*
+!.env.example

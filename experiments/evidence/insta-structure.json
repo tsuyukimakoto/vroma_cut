@@ -1,0 +1,62 @@
+{
+  "trailerStart": 16073660489,
+  "trailerLength": 53603803,
+  "records": [
+    {
+      "id": "0x0",
+      "kind": "directory",
+      "bytes": 250,
+      "offset": 16127263964
+    },
+    {
+      "id": "0x101",
+      "kind": "maker notes",
+      "bytes": 1192,
+      "offset": 16127262766
+    },
+    {
+      "id": "0x200",
+      "kind": "preview",
+      "bytes": 688168,
+      "offset": 16126574592
+    },
+    {
+      "id": "0x300",
+      "kind": "inertial samples",
+      "bytes": 24496320,
+      "offset": 16101933056,
+      "recordBytes": 20,
+      "count": 1224816,
+      "firstRawTimestamp": "504768292",
+      "lastRawTimestamp": "1730335811"
+    },
+    {
+      "id": "0x400",
+      "kind": "exposure",
+      "bytes": 1175280,
+      "offset": 16100622336,
+      "recordBytes": 16,
+      "count": 73455,
+      "firstRawTimestamp": "504766054",
+      "lastRawTimestamp": "1730311766"
+    },
+    {
+      "id": "0x900",
+      "kind": "unidentified",
+      "bytes": 3523824,
+      "offset": 16096952320
+    },
+    {
+      "id": "0xa00",
+      "kind": "unidentified",
+      "bytes": 35,
+      "offset": 16096715097
+    },
+    {
+      "id": "0xb00",
+      "kind": "unidentified",
+      "bytes": 22831443,
+      "offset": 16073883648
+    }
+  ]
+}

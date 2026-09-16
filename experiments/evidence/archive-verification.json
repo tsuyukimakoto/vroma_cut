@@ -1,0 +1,47 @@
+{
+  "sourceSHA256": "817f92f70b99a3db392d3b7f2003ffb01c3a634b274f64a42c7d507447f45ca0",
+  "archivedBytes": 61735326,
+  "regions": [
+    {
+      "type": "ftyp",
+      "typeHex": "66747970",
+      "offset": 0,
+      "originalLength": 28,
+      "archivedLength": 28,
+      "mode": "whole-box",
+      "file": "0000-66747970.bin",
+      "sha256": "c78d314decb1ece4edbbee0e3f7b0ae829542a0e7b33987767e027f9e382f71f"
+    },
+    {
+      "type": "mdat",
+      "typeHex": "6d646174",
+      "offset": 28,
+      "originalLength": 16065528982,
+      "archivedLength": 16,
+      "mode": "header-only",
+      "file": "0001-6d646174.bin",
+      "sha256": "97d856f6aa1d70e5f7d19120c9f9e7b45e81d04042adcef9fe8738846a2d4f1e"
+    },
+    {
+      "type": "moov",
+      "typeHex": "6d6f6f76",
+      "offset": 16065529010,
+      "originalLength": 8131471,
+      "archivedLength": 8131471,
+      "mode": "whole-box",
+      "file": "0002-6d6f6f76.bin",
+      "sha256": "dc73622d8ee279fe2dcad9bc3649d5589cfe4bb8044c912301e15938acb5c194"
+    },
+    {
+      "type": "inst",
+      "typeHex": "696e7374",
+      "offset": 16073660481,
+      "originalLength": 53603811,
+      "archivedLength": 53603811,
+      "mode": "whole-box",
+      "file": "0003-696e7374.bin",
+      "sha256": "075338b46acd6c0815682e5c05627855e5a91c2bcc138eac28eb5bccf459d235"
+    }
+  ],
+  "verification": "source-region and archive SHA-256 matched; archive reread verified"
+}
